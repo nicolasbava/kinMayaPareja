@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCULADORA KIN MAYA PAREJA</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- /google fonts -->
+
+    <script src="/javascripts/ValidacionesFront.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Bienvenidx</p>
+      <h1>Kin Maya Pareja</h1>
+      <img src="/images/manos-calcula.png" alt="" srcset="">
+    </header>
+
+    
+    <form action="/resultado" method="POST">
+
+      <!-- == KIN A == -->
+      <!-- SELLO A -->
+      <p>Kin A</p>
+      <!-- <label for="selloA">Elige Sello A:</label> -->
+      <select id="sello" name="selloA" required>
+        <option value="" disabled selected>Elige un sello</option>
+
+        <% sellos.forEach(element => { %>
+          <option class="selloA" value="<%= element.nombre %>"><%= element.nombre %></option>
+         
+         <% }) %>
+      </select>
+
+      <!-- TONO A -->
+      <!-- <label for="tonoA">Elige Tono A:</label> -->
+      <select id="tono" name="tonoA" required>
+        <option value="" disabled selected>Elige un tono</option>
+
+        <% tonos.forEach(element => { %>
+          <option class="tonoA" value="<%= element.nombre %>"><%= element.nombre %></option>
+         
+         <% }) %>
+      </select>
+      <br>
+      <br>
+
+      <!-- == KIN B == -->
+      <!-- SELLO B -->
+      <p>Kin B</p>
+
+      <!-- <label for="selloB">Elige Sello B:</label> -->
+      <select id="sello" name="selloB" required>
+        <option value="" disabled selected>Elige un sello</option>
+
+        <% sellos.forEach(element => { %>
+          <option class="selloB" value="<%= element.nombre %>"><%= element.nombre %></option>
+         
+         <% }) %>
+      </select>
+
+      <!-- TONO B -->
+      <!-- <label for="tonoB">Elige Tono B:</label> -->
+      <select id="tono" name="tonoB" required>
+        <option value="" disabled selected>Elige un tono</option>
+
+        <% tonos.forEach(element => { %>
+          <option class="tonoB" value="<%= element.nombre %>"><%= element.nombre %></option>
+         
+         <% }) %>
+      </select>
+
+      <br>
+      <br>
+      <button type="submit" id="submit" class="button1">Calcular Kin Pareja</button>
+    </form>
+
+
+
+    
+
+    
+  </body>
+  <footer>
+    <img src="/images/ixchel-sinfondo.png" alt="" srcset="">
+    <img class="rotate" src="/images/ixchel-sinfondo.png" alt="" srcset="">
+  </footer>
+</html>

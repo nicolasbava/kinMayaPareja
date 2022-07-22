@@ -1,0 +1,93 @@
+body {
+  padding: 50px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+header p {
+  text-align: left;
+  margin-left: 5vw;
+}
+
+header img {
+  margin-top: -42px;
+  width: 35%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -120.3px;
+  margin-bottom: 0;
+}
+
+footer img {
+  height: 200px;
+  width: auto;
+}
+
+.rotate {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* RESULTADO */
+
+h2 {
+  font-size: 2.4em;
+    padding: 0;
+    margin: 0;
+    margin-top: -50px;
+}
+
+img.img-result {
+  margin-top: -4px;
+  width: 43%;
+}
+
+.again {
+  position: relative;
+  top: 75px;
+}
+
+
+
+/* BUTTON CSS */ 
+.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #7a7a7a;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  /* font-family:'Roboto',sans-serif; */
+  font-weight:300;
+  color:#000;
+  text-align:center;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: transparent;
+
+  position: relative;
+  top: 24px;
+
+  }
+  .button1:hover{
+  color:#cbc7c7;
+  background-color:#000;
+  }
+  @media all and (max-width:30em){
+  .button1{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
+
+/* / BUTTON CSS */ 
