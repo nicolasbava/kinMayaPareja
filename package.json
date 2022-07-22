@@ -1,7 +1,7 @@
 {
   "name": "kinmayapareja",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "nodemon ./bin/www",
     "test": "nodemon ./bin/www"
